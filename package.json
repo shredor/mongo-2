@@ -3,10 +3,8 @@
   "version": "1.0.0",
   "description": "mongo",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "mongoose": "^5.0.2",
     "supertest": "^3.0.0"
@@ -23,7 +21,7 @@
   },
   "scripts": {
     "start": "nodemon --inspect index.js",
-    "test": "nodemon --exec mocha"
+    "test": "nodemon --exec mocha --recursive -R min"
   },
   "repository": {
     "type": "git",
