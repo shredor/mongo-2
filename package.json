@@ -20,8 +20,8 @@
     "nodemon": "^1.14.11"
   },
   "scripts": {
-    "start": "nodemon --inspect index.js",
-    "test": "nodemon --exec mocha --recursive -R min"
+    "start": "NODE_ENV=development nodemon --inspect index.js",
+    "test": "NODE_ENV=test nodemon --exec mocha --recursive -R min"
   },
   "repository": {
     "type": "git",
